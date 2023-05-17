@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +42,7 @@
     display: flex;
     align-items: center;
 }
+
 #leftPart,#rightPart{
     margin: 0px 30px;
 }
@@ -68,24 +70,76 @@
     justify-content: space-evenly;
 }
 
-#nav-2,#categories div{
+#nav-2{
     display: flex;
+    height: 50px;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    text-align: center;
+    background: rgb(244,244,244);
 }
 
-#categories{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
+#categories ul{
+    display: inline-flex;
+    list-style: none;
 }
-
-#categories > div > i{
-    margin: 5px 0px 0px 5px;
+#categories ul li{
+    width: 130px;
+}
+#categories ul li a{
+    text-decoration: none;
+    color: #000;
+}
+#categories ul li a:hover{
+    background:rgb(0,63,98);
+    color: white;
+}
+.browse{
+    text-decoration: underline;
+}
+.newNav{
+    margin-left: -20px;
+}
+.sub-menu{
+    display: none;
+}
+#categories ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgb(244,244,244);
+}
+#categories ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+#categories ul li:hover .sub-menu ul li{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px solid;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
 }
 
 #free-return{
     margin-right: 20px;
+}
+
+@media screen and (min-width:500px) and (max-width:768px){
+    #upper-nav-right{
+        width: 35%;
+    }
+    #search-inp{
+        width: 180px;
+    }
+    #search-btn{
+        width: 80px; 
+        height: 33px;
+    }
+    #second{
+        width: 35%;
+    }
+    #categories ul li{
+        width: 90px;
+    }
 }

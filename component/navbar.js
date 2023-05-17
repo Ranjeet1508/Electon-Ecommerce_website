@@ -43,7 +43,7 @@ function navbar(){
 
     <div id="nav-2">
         <div id="categories">
-            <div>
+            <div id="browse">
                 <p>Browse categories</p>
                 <i class="fa-solid fa-angle-down"></i>
             </div>
