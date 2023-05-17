@@ -27,14 +27,18 @@ function navbar(){
             </div>
             
             <div id="righPart">
-                <input type="text" id="search-inp" placeholder="Search any thing">
+                <input type="text" id="search-inp" placeholder="Search">
                 <button id="search-btn">Search</button>
+                
             </div>
         </div>
-
+        
+        <i id="bars" class="fa-solid fa-bars"></i>
+        
+        
         <div id="second">
             <i class="fa-regular fa-user"></i>
-            <p>Sign in</p>
+            <p><a href="#"></a> Sign in</p>
             <p>Sign up</p>
             <i class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-cart-shopping"></i>           
@@ -44,7 +48,8 @@ function navbar(){
     <div id="nav-2">
         <div id="categories">
             <ul>
-                <li class="browse">Categories</i>
+                <li class="browse"><a href="#">Home</a> </li>
+                <li class="newNav">Categories</i>
                 <div class="sub-menu">
                     <ul>
                         <li><a href="#">Laptop</a></li>
@@ -60,11 +65,51 @@ function navbar(){
                     </ul>
                 </div>
             </li>
-                <li class="newNav"><a href="#">Home</a> </li>   
-                 <li class="newNav"><a href="#">Catalog</a> </li>
-                 <li class="newNav"><a href="#">Blog</a></li>
-                 <li class="newNav"><a href="#">Pages</a> </li>
-                 <li class="newNav"><a href="#">About us</a> </li> 
+                   
+                 <li class="newNav"><a href="#">Catalog</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Availibility</a></li>
+                            <li><a href="#">Customer Rating</a></li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="newNav"><a href="#">Blog</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">Mitshubishi</a></li>
+                            <li><a href="#">Bosch</a></li>
+                            <li><a href="#">Boat</a></li>
+                            <li><a href="#">Noise</a></li>
+                        </ul>
+                    </div>
+                </li>
+                 <li class="newNav"><a href="#">Pages</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">page1</a></li>
+                            <li><a href="#">Page2</a></li>
+                            <li><a href="#">Page3</a></li>
+                            <li><a href="#">Page4</a></li>
+                            <li><a href="#">Page5</a></li>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="newNav"><a href="#">About us</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Our Jobs</a></li>
+                            <li><a href="#">Headquarter</a></li>
+                            <li><a href="#">Investors</a></li>
+                        </ul>
+                    </div>
+                 </li> 
                 </ul>
         </div>
 
