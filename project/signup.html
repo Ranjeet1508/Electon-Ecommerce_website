@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="iti/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+
+</head>
+<body>
+    <div class="main">
+        <form>
+            <h2>Sign Up</h2>
+            <h3>Hi new buddy</h3>
+            <div class="sign">
+                <label for="name">Name</label><br>
+                <input id="nam" type="text" />
+            </div>
+            
+            <div class="sign">
+             <label for="phone">Mobile</label>
+             <input type="tel" id="phone" name="phone" placeholder="Mobile" required>
+            <div class="iti__flag-container">
+             <div id="flag" class="iti__selected-flag"></div>
+            </div>
+            </div>
+                
+            <div class="sign">
+                <label for="email">Email Id</label><br>
+                <input id="email" type="email" />
+            </div>
+            <div class="sign">
+                <label for="password">Password</label><br>
+                <input id="password" type="password" />
+            </div>
+           
+            <div class="sign">
+                <button id="btn">CONTINUE</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
