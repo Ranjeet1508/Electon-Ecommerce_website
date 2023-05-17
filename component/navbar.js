@@ -43,29 +43,29 @@ function navbar(){
 
     <div id="nav-2">
         <div id="categories">
-            <div id="browse">
-                <p>Browse categories</p>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div>
-                <p>Home</p>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div>
-                <p>Catalog</p>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div>
-                <p>Blog</p>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div>
-                <p>Pages</p>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div>
-                <p>About us</p>
-            </div>      
+            <ul>
+                <li class="browse">Categories</i>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">Camera</a></li>
+                        <li><a href="#">Headphone</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Refrigerator</a></li>
+                        <li><a href="#">Fan</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">LCD</a></li>
+                        <li><a href="#">LED</a></li>
+                    </ul>
+                </div>
+            </li>
+                <li class="newNav"><a href="#">Home</a> </li>   
+                 <li class="newNav"><a href="#">Catalog</a> </li>
+                 <li class="newNav"><a href="#">Blog</a></li>
+                 <li class="newNav"><a href="#">Pages</a> </li>
+                 <li class="newNav"><a href="#">About us</a> </li> 
+                </ul>
         </div>
 
         <div id="free-return">
