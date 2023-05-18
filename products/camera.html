@@ -13,16 +13,23 @@
     <div id="my-nav">
 
     </div>
-    <div id="myproduct">
+    <div id="middleSection">
+        <div id="showCase">
 
+        </div>
+        <div id="myproduct">
+
+        </div>
     </div>
     
 </body>
         <script type="module">
             import navbar from '../component/navbar.js'
             import {fetchedData,displayData} from './camera.js'
+            import sideBar from './sidePart.js'
             
             document.getElementById("my-nav").innerHTML = navbar();
+            document.getElementById("showCase").innerHTML = sideBar();
             fetchedData();
         </script>
 </html>

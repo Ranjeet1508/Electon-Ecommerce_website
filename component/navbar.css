@@ -69,6 +69,10 @@
     display: flex;
     justify-content: space-evenly;
 }
+#second p a{
+    text-decoration: none;
+    color: aliceblue;
+}
 
 #nav-2{
     display: flex;

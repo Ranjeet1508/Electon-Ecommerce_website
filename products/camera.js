@@ -17,6 +17,10 @@ const displayData = ((data) => {
     data.forEach((elem) => {
         let div = document.createElement("div");
         div.setAttribute("id","box");
+        div.addEventListener("click", () => {
+            localStorage.setItem("CameraId",elem.id);
+            location.href = "detailscamera.html"
+        })
 
         let upperDiv = document.createElement("div");
         upperDiv.setAttribute("id","imagediv")

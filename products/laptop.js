@@ -18,6 +18,10 @@ const displayData = ((data) => {
     data.forEach((elem) => {
         let div = document.createElement("div");
         div.setAttribute("id","box");
+        div.addEventListener("click", () => {
+            localStorage.setItem("laptopId",elem.id)
+            location.href = "detailslaptop.html"
+        })
 
         let upperDiv = document.createElement("div");
         upperDiv.setAttribute("id","imagediv")
