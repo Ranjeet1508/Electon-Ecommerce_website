@@ -1,0 +1,26 @@
+
+#myproduct{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3%;
+    margin: 2%;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#box:hover{
+    transform: scale(1.1);
+}
+#image-div{
+    width: 70%;
+    
+}
+#laptop-img{
+    width: 100%;
+}
+.laptop-title{
+    color: rgb(48, 47, 47);
+}
