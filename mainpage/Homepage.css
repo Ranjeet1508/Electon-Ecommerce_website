@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif !important;
 }
 .navbar {
   margin-bottom: 2rem;
@@ -48,9 +48,10 @@
   font-size: 35px;
   font-weight: 700;
   line-height: 120%;
-  color: #4c78db;
-  font-family: "Poppins", sans-serif;
+  color: #1b587c;
+  /* font-family: "Poppins", sans-serif; */
   /* font-family: "Roboto", sans-serif; */
+  font-weight: 760;
 }
 .baneerTextButtonContainer {
   display: flex;
@@ -76,13 +77,13 @@
   width: 40%;
   height: 100%;
   border-radius: 10px;
-  color: #4c78db;
-  border: 1px solid #4c78db;
+  color: #1b587c;
+  border: 1px solid #1b587c;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 15px;
 }
 .baneerTextDotsContainer {
   display: flex;
@@ -140,6 +141,8 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 200%;
+  color: #1b587c
+  
 }
 
 .arrowBackButton {
@@ -180,7 +183,7 @@
 }
 .productHeading {
   /* border: 5px solid teal; */
-  color: #4c78db;
+  color:#003f62;
   font-size: 21px;
   width: 20%;
   height: 100%;
@@ -189,7 +192,9 @@
   flex-direction: row;
   align-items: center;
   margin: auto;
-  margin-right: 3px;
+ /* text-align: center; */
+ align-items: center;
+ justify-content: center;
   /* border: 1px solid red; */
 }
 
@@ -203,7 +208,7 @@
   align-items: center;
   font-size: 14px;
   gap: 10px;
-  color: #4c78db;
+  color:#003f62;
   font-weight: 600;
   margin: auto;
 }
@@ -291,7 +296,8 @@
 .productPrice {
   font-size: 18px;
   font-weight: 700;
-  color: #4c78db;
+  color:
+  #003f62;
 }
 .productPrice,
 .productRating {
@@ -331,7 +337,7 @@
 .secondBannerImage {
   width: 40%;
   height: 100%;
-  /* border: 2px solid teal; */
+  /* border: 5px solid teal; */
 }
 .secondBannerImage > img {
   height: 100%;
@@ -446,7 +452,7 @@
 .rightHeading,
 .leftUpperHeading {
   font-size: 16px;
-  color: #4c78db;
+  color: #1b587c;
   font-weight: bolder;
 }
 .rightPrice,
@@ -466,10 +472,12 @@
   display: flex;
   flex-direction: row;
   gap: 5%;
+  /* color: yellow; */
 }
 .rightSize > span {
   background-color: skyblue;
-  color: white;
+  color: 
+  #eda515;
   padding: 10px;
   width: 15%;
   height: 70%;
@@ -479,6 +487,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  font-weight: 800;
+  font-size: medium;
 }
 .rightCart {
   width: 100%;
@@ -566,6 +576,7 @@
   display: flex;
   flex-direction: row;
   gap: 2%;
+  /* color: #1b587c; */
 }
 .testFirst {
   border: 1px solid #666;
@@ -608,7 +619,7 @@
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  color: #4c78db;
+  color: #1b587c;
   font-size: 16px;
   font-weight: 700;
 }
