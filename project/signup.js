@@ -1,4 +1,4 @@
-import navbar from "../components/navbar.js";
+import navbar from ".../component/navbar.js";
 let navbarcomponent=document.getElementById("navbar");
 navbarcomponent.innerHTML=navbar();
 
@@ -92,4 +92,4 @@ function validateEmail(email) {
   
   document.querySelector("form").addEventListener("submit", userSign);
   
- /* window.location.href = 'index.html';*/
+  /*window.location.href = 'index.html';*/

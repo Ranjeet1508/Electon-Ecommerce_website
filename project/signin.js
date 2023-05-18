@@ -1,3 +1,9 @@
+
+
+
+
+
+
 const continueButton = document.getElementById('click');
 
 // add a click event listener to the button
