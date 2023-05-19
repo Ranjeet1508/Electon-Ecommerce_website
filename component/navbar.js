@@ -54,9 +54,9 @@ function navbar(){
                 <li class="newNav">Categories</i>
                 <div class="sub-menu">
                     <ul>
-                        <li><a href="laptop.html">Laptop</a></li>
+                        <li><a href="../products/laptop.html">Laptop</a></li>
                         <li><a href="#">PC</a></li>
-                        <li><a href="camera.html">Camera</a></li>
+                        <li><a href="../products/camera.html">Camera</a></li>
                         <li><a href="#">Headphone</a></li>
                         <li><a href="#">Mobile</a></li>
                         <li><a href="#">Refrigerator</a></li>
