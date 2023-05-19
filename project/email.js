@@ -1,7 +1,3 @@
-import navbar from"../component/navbar.js";
-const t=document.getElementById("navbar");
-t.innerHTML=navbar();
-
 
 
 
@@ -24,5 +20,6 @@ form.addEventListener('submit', function(event) {
     alert('Incorrect login details. Please try again.');
   }
 });
+window.location.href="Homepage.html"
 
 

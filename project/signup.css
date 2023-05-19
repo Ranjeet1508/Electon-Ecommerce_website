@@ -1,10 +1,11 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 body {
-    background-color: white;
+    background-color:aqua;
     /* background-image: linear-gradient(to top, rgba(240, 207, 190, 0.698), rgba(248, 248, 248, 0.93)); */
     display: flex;
     justify-content: center;
@@ -52,13 +53,14 @@ form {
     color: #333333;
     width: 30%;
     height: auto;
+    justify-content: center;
     
     padding: 40px;
     text-align: left;
     
     background-color: #c5e2ed;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position: relative
+    margin: 0 auto;
 }
 
 
@@ -67,6 +69,11 @@ form {
     display: block;
     justify-content: center;
     align-items: center;
+   /* display: inline-block;
+    margin-left: 20px;
+    width: 80%;
+    margin: auto;*/
+
 }
 
 /* h2 {
@@ -100,6 +107,8 @@ input {
 #btn {
     /* margin-left: 55px;
     margin-right: 55px; */
+    margin: 20px auto;
+    display: block;
     margin-top: 30px;
     font-family:Arial, Helvetica, sans-serif;
 
@@ -110,6 +119,8 @@ input {
     background-color: #0b6c1d;
     border: none;
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
    
 }
 h3{
@@ -151,7 +162,7 @@ h3{
     outline: none;
     background: none;
     box-shadow: none;
-   /* -webkit-appearance: none;*/
+    /*-webkit-appearance: none;*/
     line-height: normal;
 }
 #password {
@@ -167,14 +178,14 @@ h3{
     outline: none;
     background: none;
     box-shadow: none;
-    /-webkit-appearance: none;/
+    /*-webkit-appearance: none;*/
     line-height: normal;
 }
 #mbl {
-    font-size: large;
+   /* font-size: large;
     text-align: left;
     display: block;
-    width: 95%;
+    width: auto;
     margin-bottom: 0px;
     padding: 10px;
     background-color: white;
@@ -182,6 +193,22 @@ h3{
     background: none;
     box-shadow: none;
     line-height: normal;
+    margin: auto;*/
+
+  font-size: large;
+  text-align: left;
+  display: block;
+  border: 1px solid transparent;
+  width: 60%;
+  margin-bottom: 0px;
+  padding: 10px;
+  background-color: white;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  line-height: normal;
+ /* -webkit-appearance: none;*/
+  display: inline-block;
 }
 #email {
     font-size: large;
