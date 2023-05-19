@@ -1,6 +1,4 @@
-import navbar from "../components/navbar.js";
-let navbarcomponent=document.getElementById("navbar");
-navbarcomponent.innerHTML=navbar();
+
 
 
 function validateEmail(email) {
