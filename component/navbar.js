@@ -50,7 +50,7 @@ function navbar(){
     <div id="nav-2">
         <div id="categories">
             <ul>
-                <li class="browse"><a href="#">Home</a> </li>
+                <li class="browse"><a href="../mainpage/Homepage.html">Home</a> </li>
                 <li class="newNav">Categories</i>
                 <div class="sub-menu">
                     <ul>
@@ -122,5 +122,7 @@ function navbar(){
 </div>`
 
 }
+
+
 
 export default navbar;

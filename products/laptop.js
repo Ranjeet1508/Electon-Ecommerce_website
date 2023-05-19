@@ -45,5 +45,14 @@ const displayData = ((data) => {
     })
 })
 
+function searchProd () {
+    document.getElementById("search-btn").addEventListener("click",() => {
 
-export {fetchedData,displayData}
+    let input = document.getElementById("search-inp").value;
+    console.log("done")
+    location.href = `${input}.html`
+})
+}
+
+
+export {fetchedData,displayData,searchProd};

@@ -43,6 +43,13 @@ const displayData = ((data) => {
         mainSection.append(div);
     })
 })
+function searchProd () {
+    document.getElementById("search-btn").addEventListener("click",() => {
 
+    let input = document.getElementById("search-inp").value;
+    console.log("done")
+    location.href = `${input}.html`
+})
+}
 
-export {fetchedData,displayData}
+export {fetchedData,displayData,searchProd}

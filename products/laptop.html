@@ -26,11 +26,12 @@
 </body>
         <script type="module">
             import navbar from '../component/navbar.js'
-            import {fetchedData,displayData} from './laptop.js'
+            import {fetchedData,displayData,searchProd} from './laptop.js'
             import sideBar from './sidePart.js'
             
             document.getElementById("my-nav").innerHTML = navbar();
             document.getElementById("showCase").innerHTML = sideBar();
             fetchedData();
+            searchProd()
         </script>
 </html>
