@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color:yellowgreen;
+    background-color:navy;
     
     
   }
@@ -11,7 +11,7 @@
       font-family: Calibri, sans-serif;
       justify-content: center;
       align-items: center;
-      background-color:yellowgreen;
+      /*background-color:navy;*/
 
   }
   
@@ -24,7 +24,7 @@
     margin-top: 100px;
     margin-left:10px;
     text-align: center;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #FFF8DC);
+    /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #FFF8DC);*/
 
      
   

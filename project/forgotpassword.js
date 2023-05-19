@@ -1,3 +1,6 @@
+
+
+
 function validateForm() {
     var emailInput = document.getElementById("email");
   
