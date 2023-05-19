@@ -38,3 +38,23 @@
 #myfooter{
     margin-top: 15%;
 }
+
+@media screen and (min-width:700px) and (max-width:950px) {
+    #myproduct{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5%; 
+    }
+    #myfooter{
+        margin-top: 70%;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    #myproduct{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #myfooter{
+        display: none;
+    }
+
+}

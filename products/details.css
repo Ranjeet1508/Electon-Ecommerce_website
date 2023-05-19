@@ -5,7 +5,6 @@
 #upper-div{
     display: flex;
     gap: 5%;
-    height: 450px;
     
 }
 
@@ -38,4 +37,17 @@
 }
 #myfooter{
     margin-top: 10%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    #upper-div{
+        flex-direction: column;  
+    }
+    #image-div{
+        width: 100%;
+    }
+
+    #detail-div{
+        width: 100%;
+    }
 }

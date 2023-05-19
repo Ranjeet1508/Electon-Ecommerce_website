@@ -22,17 +22,19 @@
     <div id="myfooter">
 
     </div>
+
 </body>
 <script type="module">
     import navbar from '../component/navbar.js'
-    import {fetchedDetails,displayData} from './detailscamera.js';
+    import {fetchedDetails,displayData,searchProd} from './detailscamera.js';
     import footer from '../component/footer.js'
+    
 
     document.getElementById("my-nav").innerHTML = navbar();
     document.getElementById("myfooter").innerHTML = footer();
 
     fetchedDetails();
-
+    searchProd();
     
 </script>
 </html>

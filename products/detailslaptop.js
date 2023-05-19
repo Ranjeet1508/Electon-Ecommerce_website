@@ -13,6 +13,7 @@ const fetchedDetails = async () => {
 }
 
 const displayData = ((data) => {
+    let cartArr = JSON.parse(localStorage.getItem("myCart")) || [];
     document.getElementById("bottom").innerHTML = "";
 
     let upperdiv = document.createElement("div");
@@ -40,6 +41,11 @@ const displayData = ((data) => {
     let btn = document.createElement("button");
     btn.setAttribute("id","cart-button");
     btn.textContent = "Add to Cart";
+    btn.addEventListener("click", () => {
+        let laptopId = localStorage.getItem("laptopId");
+        cartArr.push(`/Laptop/${laptopId}`)
+        localStorage.setItem("myCart",JSON.stringify(cartArr))
+    })
 
     detaildiv.append(title,availibilty,price,btn);
     upperdiv.append(imagediv,detaildiv);
@@ -56,5 +62,14 @@ const displayData = ((data) => {
     document.getElementById("bottom").append(upperdiv,bottomdiv);
 })
 
+function searchProd () {
+    document.getElementById("search-btn").addEventListener("click",() => {
 
-export {fetchedDetails,displayData};
+    let input = document.getElementById("search-inp").value;
+    console.log("done")
+    location.href = `${input}.html`
+})
+}
+
+
+export {fetchedDetails,displayData,searchProd};

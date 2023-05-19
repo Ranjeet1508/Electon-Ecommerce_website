@@ -31,7 +31,7 @@
 </body>
         <script type="module">
             import navbar from '../component/navbar.js'
-            import {fetchedData,displayData,searchProd} from './laptop.js'
+            import {fetchedData,displayData,searchProd,fetchedlth,fetchedhtl} from './laptop.js'
             import sideBar from './sidePart.js'
             import footer from '../component/footer.js'
 
@@ -40,5 +40,28 @@
             document.getElementById("myfooter").innerHTML = footer();
             fetchedData();
             searchProd()
+
+            const asc = document.getElementById("lth")
+            asc.addEventListener("change", () =>{
+                console.log("checking",asc.checked);
+                if(asc.checked){
+                    fetchedlth();
+                }
+                 else{
+                     fetchedData();
+                 }
+            })
+            const desc = document.getElementById("htl")
+            desc.addEventListener("change", () =>{
+                console.log("checking",desc.checked);
+                if(desc.checked){
+                    fetchedhtl();
+                }
+                 else{
+                     fetchedData();
+                 }
+            })
         </script>
+
+        
 </html>

@@ -24,15 +24,15 @@
 </body>
 <script type="module">
     import navbar from '../component/navbar.js'
-    import {fetchedDetails,displayData} from './detailslaptop.js';
+    import {fetchedDetails,displayData,searchProd} from './detailslaptop.js';
     import footer from '../component/footer.js'
-    
+
 
     document.getElementById("my-nav").innerHTML = navbar();
     document.getElementById("myfooter").innerHTML = footer();
 
     fetchedDetails();
-
+    searchProd();
     
 </script>
 </html>
