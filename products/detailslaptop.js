@@ -44,7 +44,8 @@ const displayData = ((data) => {
     btn.addEventListener("click", () => {
         let laptopId = localStorage.getItem("laptopId");
         cartArr.push(`/Laptop/${laptopId}`)
-        localStorage.setItem("myCart",JSON.stringify(cartArr))
+        localStorage.setItem("myCart",JSON.stringify(cartArr));
+        alert("Item Added to Cart Successfully!");
     })
 
     detaildiv.append(title,availibilty,price,btn);

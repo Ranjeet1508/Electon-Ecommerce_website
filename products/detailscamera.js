@@ -45,6 +45,7 @@ const displayData = ((data) => {
         let cameraId = localStorage.getItem("CameraId");
         cartArr.push(`/Camera/${cameraId}`)
         localStorage.setItem("myCart",JSON.stringify(cartArr))
+        alert("Item Added to Cart Successfully!");
     })
         
 

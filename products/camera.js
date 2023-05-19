@@ -8,7 +8,28 @@ const fetchedData = async () => {
         console.log(err);
     }
 }
+const fetchedlth = async () => {
+    try{
+        console.log("hi...")
+        let res = await fetch(`http://localhost:3000/Camera?_sort=price&_order=asc`);
+        let data = await res.json();
+        console.log(data);
+        displayData(data);
+    }catch(err){
+        console.log(err);
+    }
+}
 
+const fetchedhtl = async () => {
+    try{
+        let res = await fetch(`http://localhost:3000/Camera?_sort=price&_order=desc`);
+        let data = await res.json();
+        console.log(data);
+        displayData(data);
+    }catch(err){
+        console.log(err);
+    }
+}
 
 const displayData = ((data) => {
     let mainSection = document.getElementById("myproduct");
@@ -52,4 +73,4 @@ function searchProd () {
 })
 }
 ////////////
-export {fetchedData,displayData,searchProd}
+export {fetchedData,displayData,searchProd,fetchedhtl,fetchedlth}
