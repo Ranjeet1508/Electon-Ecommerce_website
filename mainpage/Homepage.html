@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/22f5e07808.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,12 +14,14 @@
     />
     <link rel="stylesheet" href="./Homepage.css" />
     <link rel="stylesheet" href="../component/navbar.css" />
-    <script src="https://kit.fontawesome.com/65a2b7e515.js" crossorigin="anonymous"></script>
+   
   </head>
   <body>
     <!--  navbar -->
-    <div id="nav" class="navbar"></div>
-    <!-- Banner slide show -->
+    <div id="my-nav">
+
+    </div>
+    
     <div class="bannerMainContainer">
       <div class="baneerTextMainContainer">
         <div class="baneerTextHeadingContainer">
@@ -537,5 +540,15 @@
     <!--  footer -->
     <div id="foot" class="footer"></div>
   </body>
-  <script type="module" src="./Homepage.js"></script>
+
+
+  <script type="module" src="./Homepage.js">
+    
+  </script>
+
+  <script type="module">
+    import navbar from "../component/navbar.js";
+    let navbarcomponent = document.getElementById("my-nav");
+    navbarcomponent.innerHTML = navbar();
+  </script>
 </html>
