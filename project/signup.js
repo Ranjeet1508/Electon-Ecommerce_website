@@ -85,7 +85,7 @@ function validateEmail(email) {
   
   
     alert("You have successfully signed up");
-    window.location.href = "Homepage.html";
+    window.location.href = '../mainpage/Homepage.html';
   }
   
   document.querySelector("form").addEventListener("submit", userSign);
