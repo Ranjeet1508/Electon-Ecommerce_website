@@ -7,6 +7,7 @@
     <title>Electon | Laptop</title>
     <script src="https://kit.fontawesome.com/22f5e07808.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../component/navbar.css">
+    <link rel="stylesheet" href="../component/footer.css">
     <link rel="stylesheet" href="laptop.css">
 </head>
 <body>
@@ -21,16 +22,20 @@
 
         </div>
     </div>
-    
+    <div id="myfooter">
+
+    </div>
 </body>
         <script type="module">
             import navbar from '../component/navbar.js'
             import {fetchedData,displayData,searchProd} from './camera.js'
             import sideBar from './sidePart.js'
+            import footer from '../component/footer.js'
             
             document.getElementById("my-nav").innerHTML = navbar();
             document.getElementById("showCase").innerHTML = sideBar();
             fetchedData();
             searchProd();
+            document.getElementById("myfooter").innerHTML = footer();
         </script>
 </html>
