@@ -2,8 +2,27 @@
     <head>
         <title>Login/Email</title>
         <link rel="stylesheet" href="email.css" />
+        <link rel="stylesheet" href="../component/navbar.css"/>
     </head>
     <body>
+      <body>
+        <div id="my-nav">
+    
+        </div>
+    
+        <div id="bottom">
+            
+        </div>
+    
+    </body>
+    <script type="module">
+        import navbar from '../component/navbar.js'
+        
+        document.getElementById("my-nav").innerHTML = navbar();
+    
+        
+    </script>
+
       <div class="container">
     <div class="login-box">
       <h1>Log in to your account</h1>
@@ -29,7 +48,7 @@
     </div>
   </div>
 </body>
-<script src="email.js"></script>
+<script src="email.js"  type="module"></script>
   </html>
 
 
