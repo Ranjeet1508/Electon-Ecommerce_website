@@ -51,5 +51,5 @@ function searchProd () {
     location.href = `${input}.html`
 })
 }
-
+////////////
 export {fetchedData,displayData,searchProd}
