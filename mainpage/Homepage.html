@@ -22,21 +22,27 @@
     <div class="bannerMainContainer">
       <div class="baneerTextMainContainer">
         <div class="baneerTextHeadingContainer">
-          Canon <br />
-          camera
+          <span id="bannerTitle"></span>
+           <br />
+          <span id="bannerSubTitle"></span>
         </div>
         <div class="baneerTextButtonContainer">
           <div class="bannerNow">Shop now</div>
           <div class="bannerMore">View more</div>
         </div>
         <div class="baneerTextDotsContainer">
-          <div>○ ○ ○</div>
+          <div id="bannerSlideDot">
+            <span>•</span>
+            <span>•</span>
+            <span>•</span>
+          </div>
         </div>
       </div>
       <div class="bannerImageMainContainer">
         <img
-          src="https://m.media-amazon.com/images/I/81WtQ64-SOL._AC_UY327_FMwebp_QL65_.jpg"
-          alt="img"
+        id="bannerImage"
+        src=""
+       alt="img"
         />
       </div>
     </div>
@@ -45,55 +51,61 @@
       <!-- https://static.thenounproject.com/png/251451-200.png   aage  -->
       <div class="arrowBackButton">
         <img
-
+        id="arrowBackButton"
           src="https://static.thenounproject.com/png/251451-200.png"
           alt="backbutton"
         />
       </div>
 
       <div class="arrowFirstContainer">
-        <div class="arrowFirstImageDiv">
+        <div  class="arrowFirstImageDiv">
           <img
-            src="https://m.media-amazon.com/images/I/81TiRgFBBtL._AC_UY327_FMwebp_QL65_.jpg"
+          id="arrowFirst"
+           src=""
             alt="img"
           />
         </div>
         <div class="arrowFirstTextDiv">
-          Speaker
+      <span  style="margin-top:1rem" id="arrowFirstText"></span>
           <br />
-          (6 items)
+        <span id="arrowFirstSubText"></span>
         </div>
       </div>
 
       <div class="arrowFirstContainer">
         <div class="arrowFirstImageDiv">
           <img
-            src="https://cdn.ttgtmedia.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+          id="arrowSecImageDiv"
+            src=""
             alt="img"
           />
         </div>
         <div class="arrowFirstTextDiv">
-          Desktop & laptop
+         <span style="margin-top:1rem" id="arrowSecText"></span>
           <br />
-          (6 items)
+          <span id="arrowSecSubText"></span>
         </div>
       </div>
-      <!-- https://img.freepik.com/free-icon/right-arrow_318-458184.jpg   peeche-->
+
       <div class="arrowFirstContainer">
         <div class="arrowFirstImageDiv">
           <img
-            src="https://m.media-amazon.com/images/I/41J1kYfM6PL._AC_UY327_FMwebp_QL65_.jpg"
+          id="arrowThiImageDiv"
+           src=""
             alt="img"
           />
         </div>
         <div class="arrowFirstTextDiv">
-          DSLR cameras
+         <span  style="margin-top:1rem" id="arrowThiText"></span>
           <br />
-          (6 items)
+        <span id="arrowThiSubText"></span>
         </div>
       </div>
+
+
       <div class="arrowBackButton">
         <img
+        id="arrowForwardButton"
           src=" https://img.freepik.com/free-icon/right-arrow_318-458184.jpg"
           alt="forwardbutton"
         />
@@ -251,9 +263,9 @@
         </div>
       </div>
       <!-- slide dot -->
-      <div class="productDotMainContainer">
+      <!-- <div class="productDotMainContainer">
         <div>○ ○ ○</div>
-      </div>
+      </div> -->
     </div>
 
     <!-- second banner -->
@@ -287,13 +299,14 @@
         <div class="rightContainer">
           <div class="rightContainerImageDiv">
             <img
-              src="https://m.media-amazon.com/images/I/41mullmNHYL._AC_SR480,480_.jpg"
+            id="threeImage"
+              src=""
               alt=""
             />
           </div>
           <div class="rightTextContainer">
-            <div class="rightHeading">JBL bar 2.1 deep bass</div>
-            <div class="rightPrice">$ 11,50</div>
+            <div id="rightHeading" class="rightHeading"></div>
+            <div id="rightPrice" class="rightPrice"></div>
             <div class="rightStar">&#9733 &#9733 &#9733 &#9733 &#9733</div>
             <div class="rightSize">
               <span>57</span>
@@ -302,16 +315,19 @@
               <span>59</span>
             </div>
             <div class="rightCart">
-              <div class="rightAddToCart">Add to card</div>
+              <div class="rightAddToCart">Add to cart</div>
               <!-- <div class="rightEyeDiv">
                 <i class="fa-thin fa-eye"></i></div> -->
             </div>
           </div>
         </div>
-
         <!--  jbl dots main container -->
         <div class="productDotMainContainer rightDot">
-          <div>○ ○ ○</div>
+          <div id="rightDot">
+            <span>•</span>
+            <span>•</span>
+            <span>•</span>
+          </div>
         </div>
       </div>
 
@@ -400,11 +416,12 @@
         <div class="textFirstImagContainer">
           <div class="textFirstImage">
             <img
-              src="https://bezyl.com/wp-content/uploads/2022/08/liz2-1-300x300.png"
+            id="firsttestimonail"
+              src=""
               alt=""
             />
           </div>
-          <div class="textNameContainer">Savannah Nguyen</div>
+          <div id="firsttestimonailText" class="textNameContainer">Savannah Nguyen</div>
         </div>
         <!--  -->
         <div class="textDescription">
@@ -419,11 +436,12 @@
         <div class="textFirstImagContainer">
           <div class="textFirstImage">
             <img
-              src="https://bezyl.com/wp-content/uploads/2022/08/miguel-300x300.png"
+            id="sectestimonail"
+              src=""
               alt=""
             />
           </div>
-          <div class="textNameContainer">Esther Howard</div>
+          <div id="sectestimonailText" class="textNameContainer"></div>
         </div>
         <!--  -->
         <div class="textDescription">
@@ -440,11 +458,12 @@
         <div class="textFirstImagContainer">
           <div class="textFirstImage">
             <img
-              src="https://bezyl.com/wp-content/uploads/2022/11/Ashley-Williams-headshot-1.png"
+            id="thitestimonail"
+              src=""
               alt=""
             />
           </div>
-          <div class="textNameContainer">Ashley Williams</div>
+          <div id="thitestimonailText"  class="textNameContainer"></div>
         </div>
         <!--  -->
         <div class="textDescription">
@@ -455,7 +474,11 @@
       </div>
     </div>
     <div class="productDotMainContainer">
-      <div>○ ○ ○</div>
+      <div id="testimonialDots">
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+      </div>
     </div>
 
     <!--  whole width image -->
@@ -467,16 +490,16 @@
       <div class="leatestFirstContaienr">
         <div class="firstContainer">
           <div class="latestImageContainer">
-            <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572300642-charger-1572300636.png?crop=1.00xw:0.668xh;0,0.143xh&resize=980:*" alt="" />
+            <img id="latestFirstImage" src="" alt="" />
           </div>
           <div class="latestTextContainer">
             <div class="date">22,oct,2023</div>
-            <div class="latestHeading">Elago 3-in-1 Charging Hub</div>
+            <div id="latestFirstHeading" class="latestHeading"></div>
             <div class="latestSubHeading">
               Own an iPhone, AirPods, and Apple Watch? This charging hub takes 
               care of all three, so you can skip all the charging cords for a 
               more organized space The cutout for the charging cable is designed
-                 to fit the original Apple cable precisely
+              to fit the original Apple cable precisely
             </div>
             <div class="author">By spacing tech</div>
           </div>
@@ -487,16 +510,15 @@
       <div class="leatestFirstContaienr">
         <div class="firstContainer">
           <div class="latestImageContainer">
-            <img src="https://thegifthacker.com/wp-content/uploads/2022/06/Rechargeable-Hand-Warmer.png" alt="sound  " />
+            <img id="latestSecImage" src="" alt="sound" />
           </div>
           <div class="latestTextContainer">
             <div class="date">22,oct,2023</div>
-            <div class="latestHeading">Rechargable Handwarmer</div>
+            <div id="latestSecHeading" class="latestHeading"></div>
             <div class="latestSubHeading">
               This next tech gift for women is a handy gimmick This cute little hand warmer 
               offers double-sided heating in 3 different settings at the touch of a button.
               he can also use this device as a portable battery charger. Take my money already!
-              
             </div>
             <div class="author">By spacing tech</div>
           </div>
@@ -505,11 +527,15 @@
     </div>
 
     <div class="productDotMainContainer">
-      <div>○ ○ ○</div>
+      <div id="latestDots">
+        <span>•</span>
+            <span>•</span>
+            <span>•</span>
+      </div>
     </div>
 
     <!--  footer -->
     <div id="foot" class="footer"></div>
   </body>
   <script type="module" src="./Homepage.js"></script>
-</html> 
+</html>
