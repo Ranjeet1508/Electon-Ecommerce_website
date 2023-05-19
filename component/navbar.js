@@ -1,3 +1,5 @@
+
+
 function navbar(){
 
     return `<div id="upper-of-nav">
@@ -38,8 +40,8 @@ function navbar(){
         
         <div id="second">
             <i class="fa-regular fa-user"></i>
-            <p><a href="#"></a> Sign in</p>
-            <p>Sign up</p>
+            <p><a href="../project/signin.html">Sign in </a></p>
+            <p><a href="../project/signup.html">Sign up </a></p>
             <i class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-cart-shopping"></i>           
         </div>
@@ -52,9 +54,9 @@ function navbar(){
                 <li class="newNav">Categories</i>
                 <div class="sub-menu">
                     <ul>
-                        <li><a href="#">Laptop</a></li>
+                        <li><a href="laptop.html">Laptop</a></li>
                         <li><a href="#">PC</a></li>
-                        <li><a href="#">Camera</a></li>
+                        <li><a href="camera.html">Camera</a></li>
                         <li><a href="#">Headphone</a></li>
                         <li><a href="#">Mobile</a></li>
                         <li><a href="#">Refrigerator</a></li>

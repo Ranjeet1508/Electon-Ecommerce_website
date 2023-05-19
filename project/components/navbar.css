@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#upper-of-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+#upper-of-nav > div{
+    margin: 0px 50px;
+}
+
+#upper-nav-right{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#upper-nav-right  div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#location{
+    margin-left: -20%;
+}
+#nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0,63,98);
+    color: aliceblue;
+    height: 60px;
+}
+
+#nav-1 div{
+    display: flex;
+    align-items: center;
+}
+#leftPart,#rightPart{
+    margin: 0px 30px;
+}
+#bolt-logo{
+    color: rgb(237,165,21);
+}
+#search-btn{
+    height: 35px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: -20px;
+    color: aliceblue;
+    background: rgb(237,165,21);
+}
+
+#search-inp{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#second{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-2,#categories div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+#categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+#categories > div > i{
+    margin: 5px 0px 0px 5px;
+}
+
+#free-return{
+    margin-right: 20px;
+}

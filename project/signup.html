@@ -11,10 +11,10 @@
 
 </head>
 <body>
-    <div class="main">
+   
         <form>
             <h2>Sign Up</h2>
-            <h3>Hi new buddy</h3>
+            <h3>Hi new buddy, let's get you started with the Electon</h3>
             <div class="sign">
                 <label for="name">Name</label><br>
                 <input id="nam" type="text" />
@@ -36,11 +36,40 @@
                 <label for="password">Password</label><br>
                 <input id="password" type="password" />
             </div>
-           
             <div class="sign">
-                <button id="btn">CONTINUE</button>
+                <div class="checkbox-container">
+                  
+                  </div>
+            </div>
+            <div class="sign">
+                <button id="btn">PROCEED</button>
             </div>
         </form>
     </div>
-</body>
-</html>
+    </body>
+    <script src="signup.js"></script>
+        <script src="iti/js/intlTelInput.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    
+      <script>
+      let input = document.querySelector("#phone");
+      let itisi = window.intlTelInput(input, {
+        preferredCountries: ["in"],
+        separateDialCode: true,
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+      
+      let userMobile = iti.getNumber(intlTelInputUtils.numberFormat.E164);
+      
+      // Initialize the phone input field with the intlTelInput plugin
+      var phoneInput = document.querySelector("#phone");
+      var itis = window.intlTelInput(phoneInput, {
+        preferredCountries: ['in'],
+        separateDialCode: true,
+        utilsScript: "iti/js/utils.js"
+      });
+      </script>
+    
+    </html>
+    

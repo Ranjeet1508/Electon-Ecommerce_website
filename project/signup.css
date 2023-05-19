@@ -5,7 +5,13 @@
 
 body {
     background-image: linear-gradient(to top, rgba(240, 207, 190, 0.698), rgba(248, 248, 248, 0.93));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+    
+
 
 .main {
     border: 1px solid red;
@@ -15,15 +21,16 @@ body {
     height: 100%;
     margin: auto;
     margin-top: 85px;
+    
 }
 
 .signi {
-    /* border: 1px solid black; */
+     border: 1px solid black; 
     width: 40%;
     height: auto;
     padding: 5%;
     padding-top: -100px;
-    margin-top: -30px;
+    margin-top: -50px;
 }
 
 .signi>img {
@@ -48,6 +55,8 @@ h2 {
     font-size: 24px;
     margin-bottom: 10px;
     font-family: montserrat-bold, sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 
 h3 {
@@ -114,7 +123,7 @@ button {
     outline: none;
     background: none;
     box-shadow: none;
-    /*-webkit-appearance: none;*/
+   /* -webkit-appearance: none;*/
     line-height: normal;
 }
 #password {
@@ -164,7 +173,7 @@ button {
 }
 label {
     font-size: 20px;
-    /* position: absolute; */
+     position: absolute; 
     color: #766f6f ;
 }
 
@@ -172,4 +181,5 @@ p {
     font-size: 15px;
     margin-bottom: 20px;
 }
+
 
