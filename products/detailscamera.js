@@ -3,7 +3,7 @@
 const fetchedDetails = async () => {
     try{
         let cameraId = localStorage.getItem("CameraId");
-        let res = await fetch (`http://localhost:3000/Camera/${cameraId}`)
+        let res = await fetch (`https://electon-backend-data.onrender.com/Camera/${cameraId}`)
         let details = await res.json();
         console.log(details);
         displayData(details);
@@ -13,6 +13,7 @@ const fetchedDetails = async () => {
 }
 
 const displayData = ((data) => {
+    console.log(data)
     let cartArr = JSON.parse(localStorage.getItem("myCart")) || []
     document.getElementById("bottom").innerHTML = "";
 
@@ -46,8 +47,10 @@ const displayData = ((data) => {
         cartArr.push(`/Camera/${cameraId}`)
         localStorage.setItem("myCart",JSON.stringify(cartArr))
         alert("Item Added to Cart Successfully!");
+        // addToCart(data)
     })
         
+
 
     detaildiv.append(title,availibilty,price,btn);
     upperdiv.append(imagediv,detaildiv);
@@ -71,5 +74,11 @@ function searchProd () {
     location.href = `${input}.html`
 })
 }
+
+// let cartArr = JSON.parse(localStorage.getItem("myCart")) || []
+//     function addToCart(data){
+//     cartArr.push(data);
+//     localStorage.setItem("myCart",JSON.stringify(cartArr))
+//     }
 
 export {fetchedDetails,displayData,searchProd};

@@ -1,6 +1,6 @@
 const fetchedData = async () => {
     try{
-        let res = await fetch(`http://localhost:3000/Camera`);
+        let res = await fetch(`https://electon-backend-data.onrender.com/Camera`);
         let data = await res.json();
         console.log(data);
         displayData(data);
@@ -11,7 +11,7 @@ const fetchedData = async () => {
 const fetchedlth = async () => {
     try{
         console.log("hi...")
-        let res = await fetch(`http://localhost:3000/Camera?_sort=price&_order=asc`);
+        let res = await fetch(`https://electon-backend-data.onrender.com/Camera?_sort=price&_order=asc`);
         let data = await res.json();
         console.log(data);
         displayData(data);
@@ -22,7 +22,7 @@ const fetchedlth = async () => {
 
 const fetchedhtl = async () => {
     try{
-        let res = await fetch(`http://localhost:3000/Camera?_sort=price&_order=desc`);
+        let res = await fetch(`https://electon-backend-data.onrender.com/Camera?_sort=price&_order=desc`);
         let data = await res.json();
         console.log(data);
         displayData(data);

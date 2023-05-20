@@ -43,14 +43,14 @@ function navbar(){
             <p><a href="../project/signin.html">Sign in </a></p>
             <p><a href="../project/signup.html">Sign up </a></p>
             <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>           
+            <a href="../CartPage/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>           
         </div>
     </div>
 
     <div id="nav-2">
         <div id="categories">
             <ul>
-                <li class="browse"><a href="../mainpage/Homepage.html">Home</a> </li>
+                <li class="browse"><a href="../mainpage/HomePage.html">Home</a> </li>
                 <li class="newNav">Categories</i>
                 <div class="sub-menu">
                     <ul>

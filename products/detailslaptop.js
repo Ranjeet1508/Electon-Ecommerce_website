@@ -3,7 +3,7 @@
 const fetchedDetails = async () => {
     try{
         let laptopId = localStorage.getItem("laptopId");
-        let res = await fetch (`http://localhost:3000/Laptop/${laptopId}`)
+        let res = await fetch (`https://electon-backend-data.onrender.com/Laptop/${laptopId}`)
         let details = await res.json();
         console.log(details);
         displayData(details);

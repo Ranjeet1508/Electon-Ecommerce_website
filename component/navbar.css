@@ -69,7 +69,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-#second p a{
+#second p a,#second a{
     text-decoration: none;
     color: aliceblue;
 }
