@@ -1,3 +1,6 @@
+
+
+
 const form = document.querySelector('form');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
@@ -17,5 +20,6 @@ form.addEventListener('submit', function(event) {
     alert('Incorrect login details. Please try again.');
   }
 });
+window.location.href="Homepage.html"
 
 

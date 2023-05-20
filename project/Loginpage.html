@@ -11,7 +11,7 @@
 		}
 		
 		.container {
-			background-color: #fff;
+			background-color:aqua;
 			padding: 20px;
 			max-width: 800px;
             height:200px;
@@ -61,7 +61,7 @@
 </head>
 <body>
 	<div class="container">
-		<h2>Verify with OTP</h2>
+		<h2>Verify OTP</h2>
 		<p>A One Time Password (OTP) has been sent to your registered Mobile No</p>
 		<form>
 			<input type="text" id="otp" name="otp" placeholder="Enter OTP"><br/>
@@ -69,6 +69,9 @@
 		</form>
 	</div>
 	<script>
+
+
+
 		const loginButton = document.querySelector('input[type="submit"]');
 
 		// add a click event listener to the button
@@ -89,7 +92,7 @@
 			const successMessage = document.createElement('div');
 			successMessage.classList.add('alert');
 			successMessage.textContent = 'Login Successful !! Happy Shopping';
-			window.location.href = 'index.html';
+			window.location.href = '../mainpage/Homepage.html';
 			document.body.appendChild(successMessage);
 		});
 	</script>

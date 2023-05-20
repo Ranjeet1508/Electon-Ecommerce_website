@@ -48,13 +48,13 @@ function navbar(){
     <div id="nav-2">
         <div id="categories">
             <ul>
-                <li class="browse"><a href="#">Home</a> </li>
+                <li class="browse"><a href="../mainpage/Homepage.html">Home</a> </li>
                 <li class="newNav">Categories</i>
                 <div class="sub-menu">
                     <ul>
-                        <li><a href="laptop.html">Laptop</a></li>
+                        <li><a href="../products/laptop.html">Laptop</a></li>
                         <li><a href="#">PC</a></li>
-                        <li><a href="camera.html">Camera</a></li>
+                        <li><a href="../products/camera.html">Camera</a></li>
                         <li><a href="#">Headphone</a></li>
                         <li><a href="#">Mobile</a></li>
                         <li><a href="#">Refrigerator</a></li>
@@ -119,4 +119,10 @@ function navbar(){
     </div>
 </div>`
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 51cbc57221d305bb72d110eaa4b381761e960435
 export default navbar;

@@ -1,6 +1,4 @@
-import navbar from "../components/navbar.js";
-let navbarcomponent=document.getElementById("navbar");
-navbarcomponent.innerHTML=navbar();
+
 
 
 function validateEmail(email) {
@@ -87,9 +85,9 @@ function validateEmail(email) {
   
   
     alert("You have successfully signed up");
-    window.location.href = "signup.html";
+    window.location.href = '../mainpage/Homepage.html';
   }
   
   document.querySelector("form").addEventListener("submit", userSign);
   
- /* window.location.href = 'index.html';*/
+ /* window.location.href = 'Homepage.html';*/

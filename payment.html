@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Roboto,Arial,Helvetica,sans-serif;
+        }
+        #navbar{
+            display: flex;
+            background: #f0f1f7;
+            -webkit-box-shadow: 0 0 8px #202340;
+            box-shadow: 0 0 8px #202340;
+            padding: 5px 10px;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            justify-content: space-between;
+            padding-top: 7.5px;
+            margin-bottom: 50px;
+        }
+        #navbar>img{
+            width: 200px;
+        }
+        #navbar>a{
+            margin-right: 30px;
+            margin-top: 4px;
+            color: black;
+            font-weight: bolder;
+            color: #202340;
+            font-family: Roboto,Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: bold;
+        }
+        #navbar>a:hover{
+           color:#00a8ca ;
+           text-decoration: none;
+        }
+        /* mid css */
+        #mid{
+            display: block;
+            /* margin-top: 30px; */
+            justify-content: center;
+            /* border: 1px solid black; */
+            /* border: 5px solid black; */
+            width: 1400px;
+            margin:auto
+        }
+        .Checkout{
+            display: flex;
+            width: 1200px;
+            justify-content: space-between;
+            align-items: center;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            margin: auto;
+            padding: 27px;
+        }
+        .Checkout>h1{
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .threebuttons{
+            display: flex;
+            width: 1200px;
+            align-items: center;
+            margin: auto;
+        }
+        .threebuttons button{
+            font-size: 20px;
+            padding:8px 10px 8px 10px;
+            background-color: #F0F1F7;
+            border-radius: 5px;
+            /* gap: 25px; */
+            margin-right: 10px;
+        }
+        .threebuttons>:nth-child(3){
+            background-color: #545871;
+            color:white;
+        }
+        /* mid-bottom css */
+        #bottom{
+            display: flex;
+            padding-left: 15px;
+            justify-content: space-between;
+            margin: 0 40 40 40px;
+        }
+        #left{
+            width:60%;
+        }
+        #left1{
+            display: flex;
+            justify-content: space-between;
+            background-color: #e0e1e6;
+            padding:10px;
+            font-size: 15px;
+            
+
+        }
+        .right{
+            margin-right: 50px ;
+            width: 400px;
+        }
+        #right1{
+            margin-top: 20px;
+            font-weight: 600;
+            color: #545871;
+        }
+        #right2{
+            margin-top: 5px;
+        }
+        #right3{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 5px;
+            margin-top: 20px;
+        }
+        #right3a,#right3b{
+            font-size: 19px;
+            font-weight: 700;
+            color: #202340;
+        }
+        #right4{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-right: 5px;
+        }
+        #right4a,#right4b{
+             font-size: 14px;
+             /* font-weight: 700; */
+            color: #202340;
+        }
+        #right5{
+            background-color: teal;
+            margin-top: 10px;
+            height: 2px;
+        }
+        #right6{
+            width: 90%;
+            text-align: center;
+            font-size: 20px;
+            background-color: #414467;
+            color: white;
+            margin-left: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+        #rightl1{
+            color: #545871;
+            font-size: xx-large;
+        }
+        #right2a,#right201,#right204{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        #right7 button{
+            background-color: #414467;
+            border-radius: 20px ;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            margin-left: 80px;
+            height: 40px;
+            width: 230px;
+        }
+        #right8{
+            margin-left: 5px;
+            margin-top: 19px;
+            background-color: #F0F1f7;
+            color:#202340;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        /* footer  */
+        /* cart footer */
+        #cart-footer{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background: #f0f1f7;
+            border-top: 2px solid #bfc1cd;
+            position: absolute;
+            left: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 100px;
+        }
+        #cart-footer p{
+            font-size: 12px;
+        }
+        #cart-footer a{
+            text-decoration: none;
+            color: inherit;
+        }
+        #cart-footer div:last-child{
+            text-align: end;
+        }
+        #cart-footer img{
+            width: 25%;
+        }
+        #cart-footer p:last-child:hover{
+            color: #00a8ca;
+            cursor: pointer;
+        }
+        #left3{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #left3 input{
+            margin-top: 25px;
+        }
+        /* bottom  */
+        #bottom {
+    display: flex;
+}
+
+#bottom-left {
+    /* width: 50%; */
+    padding-left: 10px;
+}
+
+#bottom-right1{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#bottom-right2 {
+    font-size: medium;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#bottom-right3 {
+    display: flex;
+    gap: 7px;
+    /* margin-top: 15px; */
+}
+
+#bottom-right3b {
+ padding: 10px 15px;
+ width: 85px;
+ border-radius: 30px;
+ border: 0.5px solid black;
+ font-weight: bold;
+}
+#bottom-right4a,#bottom-right6a{
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#r0{
+    background-color: #F0F1F7;
+    padding: 10px;
+    padding-left: 15px;
+}
+#r6{
+    display: flex;
+}
+#r6a{
+    width: 20px;
+    margin-right: 10px
+}
+#r6b{
+    font-size: small;
+    font-weight: bold;
+}
+#r6c{
+    margin-top: 8px;
+    color: #545871;
+    /* font-weight: bold; */
+}
+#r6d{
+    padding: 10px;
+    width: 208px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#r6e{
+    font-size: small;
+}
+#right7b{
+    margin-top: 20px;
+    width: 150px;
+    
+}
+ /* adress box  */
+        
+ #boxx{
+            display: flex;
+            border: 1px dashed #545871;
+            gap: 10px;
+            padding: 10px;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #boxx1 p{
+            margin: 2px;
+        }
+        #boxx1{
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 700px) {
+        #bottom{
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+        }
+        hr{
+            width: 90%;
+        }
+        br+hr{
+            width: 100%;
+        }
+        #right4,#right3,#right5,#boxx{
+            width: 48%;
+        }
+        #right6{
+            width:20%;
+            margin-left: 28%;
+            margin-bottom: 20px;
+        }
+        #left1{
+            width: 45%;
+        }
+        #checkout{
+            width: 45%;
+            /* background-color: #00a8ca; */
+            margin-left: 0px;
+        }
+        .threebuttons{
+            width: 45%;
+            /* background-color: #00a8ca; */
+            margin-left: 30px;
+        }
+        #right7,#right8,#right9{
+            margin-top: 10px;
+            width: 45%;
+            text-align: center;
+        }
+        #left1{
+            width:77%
+        }
+        #productinfo{
+            width:77%
+        }
+        #box4{
+            width: 317%;
+            margin-bottom: 20px;
+        }
+        #line4a{
+            margin-top: 20px;
+        }
+        #right{
+            width:300%
+        }
+        #right3,#right4,#right5,#right7{
+            width:125%
+        }
+        #right204,#right201,#right2a,#right{
+            width: 125%;
+        }
+        #right207,#right2{
+            width:125%
+        }
+        /* #right8{
+            margin-top: 4px;
+            margin: auto;
+        } */
+        #left{
+            width: 45%;
+        }
+        #mid>br+hr{
+            width: 48%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- TOP SECTION  -->
+    <div id="navbar">
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo" onclick="fun1()">
+        <a href="./project.html" onclick="fun1()">Continue Shopping</a>
+    </div>
+    <!-- MIDDLE SECTON  -->
+    <div id="mid">
+        <div class="Checkout" id="checkout">
+            <h1>Checkout</h1>
+            <p style="font-size: 1.05em;">Order Total: $<span id="total">0.00</span> </p>
+        </div>
+        <div class="threebuttons">
+            <button>Address</button>
+            <button>Shipping</button>
+            <button>Payment</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div id="bottom" >
+            <div id="left">
+                <p>Select payment method</p>
+                <br>
+                <ul class="list-group" id="left2" style="border: 1px solid #DADBE6; ">
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input type="radio" style="cursor:pointer;">
+                        <p>Enter Payment Method
+                        <img src="https://img.shop.com/Image/local/images/cc/amex.jpg
+                        " alt="">
+                        <img src="https://img.shop.com/Image/local/images/cc/discover.jpg" alt="">
+                        <img src="	https://img.shop.com/Image/local/images/cc/mastercard.png" alt="">
+                        <img src="	https://img.shop.com/Image/local/images/cc/visa.jpg" alt=""></p>
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input style="cursor:pointer;" type="radio">
+                        <img src="https://bitpay.com/cdn/merchant-resources/bitpay-accepted-card-group.svg" alt="" style="width: 200px;">
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input type="radio">
+                        <img src="https://img.shop.com/Image/local/images/cc/SezzlePaymentBtn_Small-purple.svg" alt="" style="width: 200px;">
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input style="cursor:pointer;" type="radio">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png"
+                            alt="">
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input style="cursor:pointer;" type="radio">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit_MD_BNPOT_1x.png"
+                            alt="">
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input style="cursor:pointer;" type="radio">
+                        <img src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936"
+                            alt="">
+                    </li>   
+                </ul>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <div id="bottom">
+                        <div id="bottom-left">
+                            <p id="bottom-left1" style="font-weight: bold;">Shipping Address</p>
+                            <!-- js for shipping adress  -->
+                        </div>
+                        <div id="bottom-right">
+                            <p id="bottom-right1">Coupon/Gift Card</p>
+                            <p id="bottom-right2">Coupon</p>
+                            <div id="bottom-right3">
+                                <input id="bottom-right3a" font-style="italic" type="text" placeholder="Coupon Code">
+                                <button style="cursor:pointer;" id="bottom-right3b">Apply</button>
+                            </div>
+                            <p id="bottom-right40" style="margin-top: 10px;">Gift Card</p>
+                            <div id="bottom-right4">
+                                <input id="bottom-right4a" font-style="italic" type="text" placeholder="Gift card number">
+                                <!-- <button id="bottom-right4b">Apply</button> -->
+                            </div>
+                            <p id="bottom-right5">Pin:</p>
+                            <div id="bottom-right6">
+                                <input id="bottom-right6a" font-style="italic" type="text" placeholder="Pin">
+                                <button style="cursor:pointer;" id="bottom-right3b">Apply</button>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <p id="line4a" >Shipping Address</p>
+                <div id="box4"></div>
+                <div id="right">
+                    <h2 id="rightl1">Order Summary</h2>
+                    <hr id="right2">
+                    <br>
+                    <div id="right2a">
+                        <p id="right2aa">Items Subtotal:</p>
+                        <p id="right2ab">$<span id="total">0.00</span></p>
+                    </div>
+                    <div id="right201">
+                        <p id="right202">Tax Total:</p>
+                        <p id="right203">$<span id="tax">0.00</span></p>
+                    </div>
+                    <div id="right204">
+                        <p id="right205">Shipping:</p>
+                        <p id="right206">FREE</p>
+                    </div>
+                    <div id="right204">
+                        <p id="right205">Discount:</p>
+                        <p id="right206">$<span id="discount">0.00</span></p>
+                    </div>
+                    <hr id="right207">
+                    <div id="right3">
+                        <p id="right3a">Order Total:</p>
+                        <p id="right3b">$<span id="total">0.00</span></p>
+                    </div>
+                    <div id="right4">
+                        <p id="right4a"> <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="$" style="width: 13px;"> Cashback earned on this order:</p>
+                        <p id="right4b">$0.29</p>
+                    </div>
+                    <hr id="right5">
+                    <br>
+                    <div id="r0">
+                        <div id="r6">
+                            <input type="checkbox" id="r6a">
+                            <p id="r6b">Get text alerts for this order</p>
+                        </div>
+                        <p id="r6c">Mobile Phone</p>
+                        <input id="r6d" type="number" placeholder="Please enter your 10 digit phone">
+                        <p id="r6e">Message and data rates may apply</p>
+                    </div>
+                    <div id="right7">
+                        <a id="right7a" href="./shipping.html" style="color: black; cursor:pointer;"> <img src="https://cdn.pixabay.com/photo/2012/04/10/23/37/arrow-27066_960_720.png" alt="$" style="width: 13px;"> Shipping</a>
+                        <a href="./Carddetails.html"> <button style="cursor:pointer;" id="right7b" onclick="">Place Order</button></a>
+                    </div>
+                    <p id="right8">Let us know how we are doing <a href="#" style="color: #545871;">Send Feedback</a>
+                </div>
+            </div>
+        </div>
+    <!-- footer1  -->
+
+    <div id="cart-footer">
+        <div class="dis">
+            <p>© 1997-2023 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and
+                brands are the property of their respective owners. (famos-p11)</p>
+            <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+        </div>
+        <div>
+            <a href="">
+                <img src="https://www.aiowork.com/wp-content/uploads/2021/06/digicert-ssl-certificate.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#bottom-right3b").addEventListener("click",function discount(){
+        var promo=document.getElementById("bottom-right3a").value;
+        console.log(promo)
+        if(promo==="masai30"){
+            document.querySelector("#bottom-right2").innerText="Coupon applied 😢";
+            document.querySelector("#bottom-right2").style.color="green";
+            document.querySelector("#bottom-right2").style.fontWeight="600"
+            var discount=JSON.parse(localStorage.getItem("local-subtotal"))
+            var off=discount*0.3
+            off.toFixed(1);
+            discount=(discount-off).toFixed(1);
+            localStorage.setItem("local-subtotal",JSON.stringify(discount))
+            localStorage.setItem("total-payment",JSON.stringify(discount))
+            total=JSON.parse(localStorage.getItem("total-payment"))||0;
+            let x=(total-total*0.2).toFixed(1)
+            document.querySelector("#total").textContent=total
+            document.querySelector("#right3b>#total").textContent=total
+            document.querySelector("#right2ab>#total").textContent=x
+            document.querySelector("#tax").textContent=(total*0.2).toFixed(1)
+            document.querySelector("#right3b>#total").textContent=total
+            document.querySelector("#right206>#discount").textContent=off
+        }
+        else{
+            document.querySelector("#bottom-right2").innerText="Wrong Coupon applied 🤣🤣🤣";
+            document.querySelector("#bottom-right2").style.color="red";
+            document.querySelector("#bottom-right2").style.fontWeight="600"
+        }
+    })
+     var address=JSON.parse(localStorage.getItem("address-form"))
+     localStorage.setItem("total-payment",JSON.parse(localStorage.getItem("local-subtotal")))
+     total=JSON.parse(localStorage.getItem("total-payment"))||0
+    document.querySelector("#total").textContent=total
+    document.querySelector("#right3b>#total").textContent=total
+    document.querySelector("#right2ab>#total").textContent=(total-total*0.2).toFixed(1);
+    document.querySelector("#tax").textContent=(total*0.2).toFixed(1);
+    document.querySelector("#right3b>#total").textContent=total
+    showaddress(address)
+    function showaddress(obj){
+        console.log("hi",address)
+        var div1=document.createElement("div")
+        div1.setAttribute("id","boxx")
+        // var input=document.createElement("input")
+        // input.setAttribute("type","radio")
+        var name=document.createElement("p")
+        name.innerText=obj.firstname1+" "+obj.lastname1;
+        var address= document.createElement("p")
+        address.textContent=obj.address1;
+        var city=document.createElement("p")
+        city.innerText=obj.city1;
+        var state=document.createElement("p")
+        state.innerText= obj.state1;
+        var zip=document.createElement("p")
+        zip.textContent= obj.zip1;
+        var phone=document.createElement("p")
+        phone.textContent= obj.phone1;
+        var div2=document.createElement("div")
+        div2.setAttribute("id","boxx1")
+        div2.append(name,address,city,state,phone)
+        div1.append(div2)
+        document.getElementById("bottom-left").append(div1)
+    }
+    function fun1(){
+        window.open("../project.html","_self")
+    }
+</script>

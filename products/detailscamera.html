@@ -7,6 +7,7 @@
     <title>Electon | details</title>
     <script src="https://kit.fontawesome.com/22f5e07808.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../component/navbar.css">
+    <link rel="stylesheet" href="../component/footer.css">
     <link rel="stylesheet" href="./details.css">
 </head>
 <body>
@@ -18,14 +19,22 @@
         
     </div>
 
+    <div id="myfooter">
+
+    </div>
+
 </body>
 <script type="module">
     import navbar from '../component/navbar.js'
-    import {fetchedDetails,displayData} from './detailscamera.js';
+    import {fetchedDetails,displayData,searchProd} from './detailscamera.js';
+    import footer from '../component/footer.js'
+    
+
     document.getElementById("my-nav").innerHTML = navbar();
+    document.getElementById("myfooter").innerHTML = footer();
 
     fetchedDetails();
-
+    searchProd();
     
 </script>
 </html>

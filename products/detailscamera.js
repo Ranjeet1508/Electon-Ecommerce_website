@@ -13,6 +13,7 @@ const fetchedDetails = async () => {
 }
 
 const displayData = ((data) => {
+    let cartArr = JSON.parse(localStorage.getItem("myCart")) || []
     document.getElementById("bottom").innerHTML = "";
 
     let upperdiv = document.createElement("div");
@@ -40,6 +41,13 @@ const displayData = ((data) => {
     let btn = document.createElement("button");
     btn.setAttribute("id","cart-button");
     btn.textContent = "Add to Cart";
+    btn.addEventListener("click",() => {
+        let cameraId = localStorage.getItem("CameraId");
+        cartArr.push(`/Camera/${cameraId}`)
+        localStorage.setItem("myCart",JSON.stringify(cartArr))
+        alert("Item Added to Cart Successfully!");
+    })
+        
 
     detaildiv.append(title,availibilty,price,btn);
     upperdiv.append(imagediv,detaildiv);
@@ -55,6 +63,13 @@ const displayData = ((data) => {
 
     document.getElementById("bottom").append(upperdiv,bottomdiv);
 })
+function searchProd () {
+    document.getElementById("search-btn").addEventListener("click",() => {
 
+    let input = document.getElementById("search-inp").value;
+    console.log("done")
+    location.href = `${input}.html`
+})
+}
 
-export {fetchedDetails,displayData};
+export {fetchedDetails,displayData,searchProd};
