@@ -58,9 +58,6 @@ function footer(){
             </div>
         </div>
     </div>`}
+    
+export default footer;
 
-<<<<<<< HEAD
-export default footer;
-=======
-export default footer;
->>>>>>> 51cbc57221d305bb72d110eaa4b381761e960435
