@@ -10,7 +10,7 @@ var cart = JSON.parse(localStorage.getItem("myCart")) || [];
     document.getElementById("checkOut").style.display = "none";
     document.querySelector("p").style.display = "none";
   }
- 
+ //
   function displayCart(){
     
     cart.map(function(data,ind){
@@ -38,7 +38,8 @@ var cart = JSON.parse(localStorage.getItem("myCart")) || [];
                 button.textContent = "Remove from cart";
                 button.setAttribute("id","remove-btn")
                 button.addEventListener("click",function(){
-                deleteItem(elem,ind);
+                  // localStorage.removeItem("")
+                  deleteItem(elem,ind);
                 });
 
                 divOfPara.append(para1,para2,button);
