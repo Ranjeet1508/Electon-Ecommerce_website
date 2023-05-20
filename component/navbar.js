@@ -1,5 +1,3 @@
-
-
 function navbar(){
 
     return `<div id="upper-of-nav">
@@ -120,9 +118,11 @@ function navbar(){
         </div>
     </div>
 </div>`
-
 }
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> 51cbc57221d305bb72d110eaa4b381761e960435
 export default navbar;
